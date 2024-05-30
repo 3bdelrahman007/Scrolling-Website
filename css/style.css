@@ -1,0 +1,36 @@
+body {
+    background: linear-gradient(#200016, #10001f);
+    min-height: 100vh;
+}
+
+.main {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(to top, #200016, transparent);
+}
+
+.main img {
+    height: 100vh;
+    object-fit: cover;
+}
+
+
+
+.main #moon {
+    mix-blend-mode: screen;
+    object-position: top;
+    transform: translateY(50px);
+}
+
+.header {
+    font-size: 14px;
+    transform: translateY(-150px);
+}
